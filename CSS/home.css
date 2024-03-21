@@ -1,0 +1,527 @@
+
+/* defining our font and webpage structure */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: cyan(82, 7, 143, .4);
+}
+/* This is added.  */
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* This is the css style for the logo of the product or page.  */
+.nav-logo{
+    height: 45px;
+    width: 50px;
+    margin-left: 20px;
+}
+
+.logo{
+    /* background-image: url('Images/google.jpeg'); */
+    background-image: url("../images/rtt.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Giving the property border and hover so whenever we go there we see a hover effect.  */
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 2px solid rgb(8, 46, 218);
+}
+
+/* Giving the css property to the search bar so we get search option there.  */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(25, 217, 195);
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    padding-left: 10px;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #13d4e5;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+}
+.nav-search:hover{
+    border: 2px solid rgb(32, 188, 151);
+}
+
+/* This css property is used to give property to the cart option.  */
+.nav-cart{
+    margin-right: 20px;
+}
+.nav-cart i{
+    font-size: 32px;
+}
+.nav-cart{
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* To this line.  */
+
+
+/* defining style for our heading tags  */
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: darkolivegreen;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #455;
+}
+
+h4{
+font-size: 20px;
+color: cadetblue;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* defining styles for our paragraph */
+p{
+    font-size: 16px;
+    color: #455;
+    margin: auto;
+}
+
+/* global padding and margins for seperating each section  */
+.section_p1{
+    padding: 40px 90px;
+}
+
+.section_m1{
+    margin: 60px 0;
+}
+
+/* css for our first button  */
+button.plain{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+body{
+    width: 100%;
+}
+
+/* css for our nav bar */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #162733;
+    box-shadow: 0 5px 15px #143;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* css for elements in the nav bar */
+#navigationbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigationbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navigationbar li a{
+     text-decoration: none;
+     font-size: 16px;
+     font-weight: 600;
+     color: white;
+     transition: 0.3s ease;
+}
+
+#navigationbar li a:hover,
+#navigationbar li a.active{
+    color: aquamarine; 
+
+}
+
+#navigationbar li a.active::after,#navigationbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: cadetblue;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/* css ends here for nav elements */
+
+
+/* css for navigating products */
+
+#fproducts{
+    text-align: center;
+    padding-top: 90px;
+    
+}
+
+#fproducts .prod-vessel{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    flex-wrap: wrap;
+}
+
+#fproducts .prod{
+    width: 23%;
+    min-width: 250px;
+    padding: 20px 24px;
+    border: 1px solid #ccd89c;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px #059;
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;;
+}
+
+#fproducts .prod:hover{
+    box-shadow: 20px 20px 30px #015;
+}
+
+#fproducts .prod img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#fproducts .prod .first{
+    text-align: start ;
+    padding: 10px 0;
+}
+
+
+#fproducts .prod .first h5{
+    padding-top: 7px;
+    color: midnightblue;
+    font-size: 14px;;
+}
+/* css end for navigation products */
+
+
+/* css styling for our repair offer portion */
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/23.png");
+    width:100%;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner h4{
+    color:mediumblue;
+    font-size: 16px;
+}
+
+#banner h2{
+    color: navy;
+    font-size: 30px;
+    padding: 10px 0;;
+}
+
+#banner button:hover{
+    background-color: #143;
+    color: #cce7d7;
+}
+/* css end for repair offer */
+
+
+/* css styling for our five display cards */
+#flashbanners{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#flashbanners .cardbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../images/bann1.png");
+    min-width: 400px;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
+
+#flashbanners .cardbox2{
+    background-image: url("../images/bann2.png");
+
+}
+
+#flashbanners h4{
+    color: khaki;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#flashbanners h2{
+    color: khaki;
+    font-size: 29px;
+    font-weight: 500;
+}
+
+#flashbanners span{
+    color: #143;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+
+/* styling flashcard buttons for hover effect  */
+#flashbanners .cardbox:hover button{
+    background: #455;
+    border: 1px solid yellowgreen;
+}
+
+#flashbanners .cardbox2:hover button{
+    background: #455;
+    border: 1px solid yellowgreen;
+}
+
+/* css styling for the bottom three flashcards shown in the website  */
+#cardbox3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#cardbox3 .cardbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("../images/bann3.png");
+    min-width: 30%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#cardbox3 .cardbox4{
+    background-image: url("../images/bann4.png");
+}
+
+#cardbox3 .cardbox5{
+    background-image: url("../images/bann5.png");
+}
+
+
+#cardbox3 h2{
+    color:green;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#cardbox3 h3{
+    color: black;
+    font-weight: 800;
+    font-size: 15px;
+}
+/* css end for our five cardboxex */
+
+
+/* styling for our newsletter portion */
+#news{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #027;
+}
+/* styling header tag by defining its assigned class */
+#news h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: antiquewhite;
+}
+
+#news p{
+    font-size: 15px;
+    font-weight: 600;
+    color: antiquewhite;
+}
+
+#news p span{
+    color: yellowgreen;
+}
+
+/* styling for our new letter form  */
+#news .form{
+    display: flex;
+    width: 40%;
+}
+#news input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#news button{
+    background-color: #143;
+    color: #cce7d7;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* new button properties for our newletter form */
+button
+{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: black;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    outline: none;
+    transition: 0.2s;
+     box-shadow: 2px 2px 8px black;
+   
+}
+
+button:hover
+{
+    transition: .4s;
+      box-shadow: 3px 3px 8px floralwhite;
+      transform: scale(1.05);
+      background: #162733;
+}
+/* css end for our new button properties */
+
+/* css end for newsletter portion */
+
+
+/* css portion for our footer section */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ccd89c;
+}
+
+/* using flex tag for seperating our text columns in the footer section  */
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{ 
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #455;
+    margin-bottom: 10px;
+} 
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: gray;
+    padding-right: 4px;
+    cursor: pointer;
+}
+/* css end for our footer */
+
+
+
+
+
+

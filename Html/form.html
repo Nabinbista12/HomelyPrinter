@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/form.css">
+</head>
+<body>
+
+    <div class="signupSection">
+        <div class="info">
+          <h2>Welcome to our website</h2>
+          <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+        </div>
+        <form class="signupForm" name="signupform" onsubmit="return validateform()">
+          <h2>Sign Up</h2>
+          <ul class="noBullet">
+            <li>
+              <label for="username"></label>
+              <input type="text" class="inputFields" id="firstName" name="fname" placeholder="First Name" value=""/>
+            </li>
+            <li>
+              <label for="username"></label>
+              <input type="text" class="inputFields" id="lastName" name="lname" placeholder="Last Name" value=""/>
+            </li>
+            <li>
+              <label for="email"></label>
+              <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" />
+            </li>
+            <li>
+              <label for="password"></label>
+              <input type="password" class="inputFields" id="password" name="password" placeholder="Password" value=""/>
+            </li>
+            <li id="center-btn">
+                <input id="join-btn" type="submit" value="Sign Up">
+            </li>
+          </ul>
+        </form>
+      </div>
+
+      <script src="../JavaScript/form.js"></script>
+    
+    
+</body>
+</html>

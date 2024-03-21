@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <!-- This is for the external stylesheet of this page.  -->
+    <link rel="stylesheet" href="../CSS/product_detail.css">
+    <!-- This is the link of the font-awesome for the font.  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- This is internal css.  -->
+    <style>
+        /* Giving property to all h3 element. */
+        h3 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .footer {
+            height: 200px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- This is the main container of the page.  -->
+    <div class="container">
+        <!-- This is the font of the cart link from font-awesome.  -->
+        <i class="fas fa-shopping-cart cart" onclick="cartMessage()"></i>
+        <div class="cart-message" id="cartMessage">
+            Product added to cart!
+        </div>
+
+        <!-- This is the product div for the product image and detail.  -->
+        <div class="product">
+            <div class="main-img"><img src="../images/printer1.jpg" alt="printer" id="mainImage"></div>
+            <div class="small-img-container" id="smallImgContainer">
+                <!-- Giving some javascript for toggle image or hover image. onmouseover is like hover when hover change occur in html according to the javascript. 
+                This are small image when hover changes occur. -->
+                <img class="small-img" src="../images/printer1.jpg" alt="Printer" onmouseover="changeMainImage('../images/printer1.jpg')">
+                <img class="small-img" src="../images/printer2.jpg" alt="Printer" onmouseover="changeMainImage('../images/printer2.jpg')">
+                <img class="small-img" src="../images/printer3.jpg" alt="Printer" onmouseover="changeMainImage('../images/printer3.jpg')">
+                <img class="small-img" src="../images/printer4.jpg" alt="Printer" onmouseover="changeMainImage('../images/printer4.jpg')">
+                <img class="small-img" src="../images/printer5.jpg" alt="Printer" onmouseover="changeMainImage('../images/printer5.jpg')">
+                <img class="small-img" src="../images/printer6.jpg" alt="Printer" onmouseover="changeMainImage('../images/printer6.jpg')">
+                <img class="small-img" src="../images/printer7.jpg" alt="Printer" onmouseover="changeMainImage('../images/printer7.jpg')">
+            </div>
+
+            <!-- In this div we give the detail like price, name and rate and also buy and cart option.  -->
+            <div class="detail">
+                <ul>
+                    <li>
+                        <h2 class="name">HP OfficeJet 8015e Wireless Color All-in-One Printer</h2>
+                        <br>
+                        <span>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                        <hr>
+                        <br>
+                        <p>Model name: <b>New</b></p>
+                        <h2 id="price">Rs 5,500</h2>
+                        <div style="display: flex; align-items: baseline;">
+                            <h4 class="fake-price" style="text-decoration: line-through; color: rgb(226, 19, 19);">Rs 11,000</h4>
+                            <p style="font-size: 10px; margin-left: 5px;">50% off</p>
+                        </div>
+
+                        <!-- This is for the quantity which will calculate the price of based on the user order. -->
+                        <div class="quantity">
+                            <label class="quant" for="quantity">Quantity:</label>
+                            <button class="add" onclick="update('decrease')">-</button>
+                            <input class="write" type="text" id="quantity" value="1" readonly>
+                            <button class="add" onclick="update('increase')">+</button>
+                        </div>
+                    </li>
+                    <br>
+                    <li class="brand">Brand: HP | More Printers & Accessories from HP</li>
+                    <hr>
+                </ul>
+
+                <!-- This is for the buy button and cart button of the page.  -->
+                <div class="buy-button">
+                    <button class="buy" onclick="out_StockMessage()"><h2>Buy Now</h2></button>
+                    <button class="cart-button" onclick="addCart()"><h2>Add To Cart</h2></button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- In this section is all about the detail of the product like detail and description.  -->
+        <div class="second">
+            
+            <h3>OverView</h3>
+            <p style="border-bottom: 1px solid #ddd;">The smart printer that gets works done. Save time with Shortcuts[1,4] and automatic two-sided printing. Activate the HP+ Smart   Printing System and get 6 free months of Instant Ink[6], extended 2 year warranty[11] and more.
+                Includes HP+ for 6 free months of Instant Ink and an extended 2-year HP warranty.[11]
+                This printer is intended to work only with cartridges that have a new or reused HP chip, and it uses dynamic security measures to block cartridges using a non-HP chip. Periodic firmware updates will maintain the effectiveness of these measures and block cartridges that previously worked. A reused HP chip enables the use of reused, remanufactured, and refilled cartridges. More at:
+                http://www.hp.com/learn/ds
+                This is an HP+ enabled printer. Choose HP+ at product setup to activate benefits. HP+ requires an HP account, ongoing connection to the internet, and exclusive use of Original HP Ink cartridges for the life of the printer. More at:
+                http://www.hp.com/plus</p>
+                <br>
+              
+                <br>
+            <h3>About this item</h3>    
+            <ul style="padding: 20px 0px 0px 20px ;">
+                <li>Sold as 1 Each.</li>
+                <li>BEST FOR SMALL BUSINESSES AND HOME OFFICES - Print professional-quality color documents like forms, reports, brochures, and presentations</li>
+                <li>KEY FEATURES - Fast color print, copy and scan, plus 2-sided printing, mobile and wireless printing, and an auto document feeder</li>
+                <li>FAST PRINT SPEEDS - Print up to 18 pages per minute in black and 10 pages per minute in color</li>
+                <li>DUAL BAND WI-FI - Self-healing Wi-FiTM automatically detects and resolves connection issues</li>
+            </ul>
+            <p><b>Note: </b>Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally, and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing.</p>
+            <br><br>
+            <h3>What's in the box</h3>
+            <ul style="padding: 20px 0px 0px 20px ;">
+                <li>Inkjet Cartridges</li>
+                <li>HP OfficeJet 8015e All-in-One Printer</li>
+                <li>HP 910 Setup Cyan Ink Cartridge</li>
+                <li>HP 910 Setup Magenta Ink Cartridge</li>
+                <li>HP 910 Setup Yellow Ink Cartridge</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+
+    <!-- This is the external javascript link.  -->
+    <script src="../JavaScript/product_detail.js"></script>
+    <!-- This is the inline javascript link.  -->
+    <script>
+        
+        // This part is for the toggle image for the small image to big image. 
+        function showMoreImages() {
+            const smallImgContainer = document.getElementById('smallImgContainer');
+            const showMoreButton = document.querySelector('.show-more');
+
+            // This part of the code do if there is class show-all then it removes it. 
+            if (smallImgContainer.classList.contains('show-all')) {
+                smallImgContainer.classList.remove('show-all');
+                showMoreButton.innerText = 'Show More';
+            } else {
+                smallImgContainer.classList.add('show-all');
+                showMoreButton.innerText = 'Show Less';
+            }
+        }
+    </script>
+</body>
+</html>

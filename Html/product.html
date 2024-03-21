@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/rtt.png">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../CSS/product.css">
+    <!-- Linking font awesome for font.  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* This is for the h3 in the product page. */
+        .type{
+            padding-left: 20px;
+            cursor: pointer;
+            transition: font-size 0.9s ease;
+
+        }
+        .type:hover{
+            color: rgb(12, 224, 239);
+            font-size: 110%;
+        }
+        /* This style is for the arrow in the prodcut page.  */
+        .arrow {
+            font-weight: bold;
+            font-size: 40px;
+            vertical-align: middle;
+        }
+
+        /* This is for the fake price of the printer. */
+        .price{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Giving the style to the click to show more products.  */
+        .product a {
+            transition: color 0.3s ease; 
+            color: black; 
+        }
+
+        /* Hiding image for the toggles in the product page.  */
+        .hide{
+            display: none;
+        }
+
+        /* This is for the text part where there is saying see more and printer type. */
+        .heads{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .heads a{
+            color: black;
+            font-size: 25px;
+        }
+        .heads a:hover{
+            color: rgba(39, 37, 37, 0.892);
+        }
+        /* This style is about short summary about the product.  */
+        .define{
+            padding: 10px 40px;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- In this header section there will be 2 navbar for the product page.  -->
+    <header>
+        <!-- This is for the logo section for the webpage.  -->
+        <div class="navbar" id="firsts">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="name" style="position: absolute; left: 70px">
+                <p>HomelyPrinters</p>
+            </div>
+
+            <!-- In this section there is search logo and the placeholder for the search page.  -->
+            <div class="nav-search">
+                <a href="#one" style="text-decoration: none; padding-top: 10px;">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </a>
+                <input type="text", placeholder="Search for the printer" class="search-input">
+            </div>
+
+            <!-- In this section there is cart option.  -->
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>          
+        </div>
+
+        <!-- This is the second bar there is home section, about us, and other remaining. This section is fill when othere will met.  -->
+        <div class="navbar-second">
+            <!-- This is the navbar of the project page.  -->
+            <section id="header">
+                <a class="home" href="../index.html">Home</a>
+        
+        
+                <div>
+                    <ul id="navigationbar">
+                        <li><a class="active" href="product.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="aboutus.html">AboutUs</a></li> 
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <!-- This is the filter bar.  -->
+    <div class="filter" >
+        <div class="filter-first">
+            <p style="padding: 5px 10px;">14 results for printer</p>
+        </div>
+        <div class="sort">
+            <ul>
+                <button style="border-radius: 5px;">
+                    <li ><label for="">Sort By</label>
+                        <select name="Product" id="101" style="border: none; width: 80px; border-radius: 5px;">
+                            <option value="Relevent">Relevent</option>
+                            <option value="Newest">Newest</option>
+                            <option value="Price Low to high">Price Low to high</option>
+                            <option value="Price hight to low">Pirce hight to low</option>
+                        </select>
+                    </li>
+                </button>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- This is the product section in which there wil be products available.  -->
+    <main class="products">
+        <!-- This is the body section of the product page. 
+        There will be four row with four colum so total 16 products available. -->
+        
+        <!-- This is the first row of the product page.  -->
+        <div class="heads">
+            <h1 class="type">ALL Printers <span class="arrow">&#8594;</span></h1>
+            <span class="more"><a href="#firsts">See More</a></span>
+        </div>
+
+        <!-- This is main body.  -->
+        <p class="define">These are the most searched and most selled printer this year. There is no consumer complaint in these printer.</p>
+        <div class="product-second">
+            <!-- 1 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <a href="product_detail.html" target="main">
+                    <div class="product-image" onmouseenter="toggle(this)" onmouseleave="resetImage(this)">
+                        <img id="1" src="../images/printer8.png" alt="printer">
+                    </div>
+                </a>  
+                <!-- The description like name price rating and other things.  -->
+                <a href="product.html" class="link">
+                    <div class="product-description">
+                        <!-- This is for the name section.  -->
+                        <h2>HP OfficeJet 8015e Wireless Color All-in-One Printer</h2>
+                        <br>
+                        <!-- This h3 is for the price and second h3 is the acutal price. -->
+                        <h2 class="acutal-price">Rs 5,500</h2>
+                        <div class="price">
+                            <h3 class="fake-price">11,000</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">50% off</p>
+                        </div>
+                        <!-- This is the rating of the product.  -->
+                        <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- 2 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image" onmouseenter="toggleSecond(this)" onmouseleave="resetSecondImage(this)">
+                    <img id="2" src="../images/printer10.png" alt="printer">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>Brother MFC-J1010DW Wireless Color Inkjet All-in-One Printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 9,999</h2>
+                        <div class="price">
+                            <h3 class="fake-price">RS 6,999</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">30% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9734; &#9734;</h5>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image" onmouseenter="toggleThird(this)" onmouseleave="resetThirdImage(this)">
+                    <img id="3" src="../images/printer12.png" alt="printer">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>Canon Pixma MG3620 Wireless All-In-One Color Inkjet Printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 5,400</h2>
+                        <div class="price">
+                            <h3 class="fake-price">Rs 7,999</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">32% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image" onmouseenter="toggleForth(this)" onmouseleave="resetForthImage(this)">
+                    <img id="4" src="../images/printer14.png" alt="printer">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>Epson Workforce Pro WF-4830 Wireless All-in-One Printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 14,400</h2>
+                        <div class="price">
+                            <h3 class="fake-price">Rs 29,999</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">40% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                </div>
+            </div> 
+        </div>
+        <br>
+        
+        <!-- This is the second row of the product page.  -->
+        <div class="heads">
+            <h1 class="type">Impact Printer <span class="arrow">&#8594;</span></h1>
+            <span class="more"><a href="product.html">See More</a></span>
+        </div>
+
+        <p class="define">Impact printers use a mechanism that physically strikes an inked ribbon to produce characters on paper. They are known for their durability and ability to create carbon copies.</p>
+        <div class="product-second">
+
+            <!-- 1 -->
+            <div class="product" >
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image">
+                    <img src="../images/printer16.png" alt="printer">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>Oki Microline 320 Turbo/N Dot Matrix Printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 8,320</h2>
+                        <div class="price">
+                            <h3 class="fake-price">Rs 10,400</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">20% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image">
+                    <img src="../images/printer17.png" alt="printer">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>Daisy Wheel printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 2,999</h2>
+                        <div class="price">
+                            <h3 class="fake-price">Rs 5,999</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">50% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image">
+                    <img src="../images/printer18.png" alt="printer">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>HP LaserJet Pro 4001dn Black & White Printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs  24,890</h2>
+                        <div class="price">
+                            <h3 class="fake-price">Rs 35,990</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">50% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="product click">
+                <!-- Tell the user there are more products by giving a link.  -->
+                <h2 onclick="change('change1')"><a id="change1">Click Here for more.....</a></h2>
+            </div>
+        </div>
+        <br><br>
+        
+        <!-- This is the third row of the product page.  -->
+        <div class="heads" id="one">
+            <h1 class="type">Non-Impact Printer <span class="arrow">&#8594;</span></h1>
+            <span class="more"><a href="product.html">See More</a></span>
+        </div>
+
+        <p class="define">Non-impact printers, in contrast, use methods such as lasers or inkjets to create characters without physically striking the paper.</p>
+        <div class="product-second">
+
+            
+
+            <!-- 1 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image" onclick="changes()">
+                    <img id="first" src="../images/printer20.png" alt="#"> 
+                    <img class=" hide" id="second" src="../images/printer21.png" alt="#">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>HP DeskJet 2755e Wireless Color inkjet-printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 84,400</h2>
+                        <div class="price">
+                            <h3 class="fake-price">Rs 4,999</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">41% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image" onclick="changeSecond()">
+                    <img id="third" src="../images/printer22.png" alt="#"> 
+                    <img class=" hide" id="forth" src="../images/printer23.png" alt="#">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>HP Color Laserjet Pro MFP 4301fdw Wireless All-in-One Printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 57,890</h2>
+                        <div class="price">
+                            <h3 class="fake-price">Rs 69,999</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">17% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image" onclick="changeThird()">
+                    <img id="fifth" src="../images/printer24.png" alt="#"> 
+                    <img class=" hide" id="sixth" src="../images/printer25.jpg" alt="#">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>Rollo USB Shipping Label Printer: Thermal Printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 19,999</h2>
+                        <div class="price">
+                            <h3 class="fake-price">Rs 9,999</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">50% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image" onclick="changeForth()">
+                    <img id="seventh" src="../images/printer26.png" alt="#"> 
+                    <img class=" hide" id="eighth" src="../images/printer27.png" alt="#">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>HP DeskJet 2755e Wireless Color inkjet-printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 49,000</h2>
+                        <div class="price">
+                            <h3 class="fake-price">RS 84,000</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">41% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9734; &#9734;</h5>
+                </div>
+            </div>                
+       </div>
+        
+
+        <!-- This is the forth row of the product page.  -->
+        <div class="product-second">
+
+            <!-- 1 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image">
+                    <img src="../images/printer28.png" alt="printer">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>LBrother MFC-J4335DW INKvestment Tank All-in-One Printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 15,999</h2>
+                        <div class="price">
+                            <h3 class="fake-price">Rs 17,999</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">11% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image">
+                    <img src="../images/printer30.png" alt="printer">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>Brother MFC-L8900CDW Business Color Laser All-in-One Printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 64,99</h2>
+                        <div class="price">
+                            <h3 class="fake-price">Rs 12,999</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">50% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="product">
+                <!-- Giving a image to a product. With some css property. -->
+                <div class="product-image">
+                    <img src="../images/printer32.png" alt="printer">
+                </div>
+                <!-- The description like name price rating and other things.  -->
+                <div class="product-description">
+                    <!-- This is for the name section.  -->
+                    <h2>HP ENVY 6055e Wireless Color Inkjet Printer</h2>
+                    <!-- This h3 is for the price and second h3 is the acutal price. -->
+                    <h2 class="acutal-price">Rs 7,999</h2>
+                        <div class="price">
+                            <h3 class="fake-price">Rs 12,999</h3>
+                            <p style="font-size: 10px; margin-left: 5px;">38% off</p>
+                        </div>
+                    <!-- This is the rating of the product.  -->
+                    <h5>Rating &#9733; &#9733; &#9733; &#9733; &#9734;</h5>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="product click">
+                <!-- Tell the user there are more products by giving a link.  -->
+                <h2 onclick="change('change2')"><a id="change2">Click Here for more.....</a></h2>
+            </div>
+        </div>  
+    </main>
+
+
+    <!-- This is the footer of the webpage.  -->
+    <footer class="section_p1">
+        <div class="col1">
+            <img class="logo" src="pictures/rtt.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Islington College, Kamalpokhari</p>
+            <p><strong>Phone:</strong> 01-47658990, 01-44888997</p>
+            <p><strong>Email:</strong> print@gmail.com</p>
+            
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Terms</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Delivery</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="form.html">Sign In</a>
+            <a href="#">Notifications</a>
+            <a href="#">My Cart</a>
+            <a href="#">Track Order</a>
+        </div>
+
+        <div class="install">
+            <h4>Install App</h4>
+            <p>From App Store and Google Play</p>
+            <div class="row">
+               <img src="pictures/app.png" alt="">
+               <img src="pictures/5a902dbf7f96951c82922875.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <p style="text-align: center; background-color: #ccd89c; padding-bottom: 45px;">&#169;copyright 2024, HTML, CSS, JavaScript.</p>
+
+    <script src="../JavaScript/product.js"></script>
+    <script>
+        // To change the text in see more page. 
+        function change(id) {
+            let element = document.getElementById(id);
+            element.innerHTML = "Sorry, more products are not currently available";
+            element.style.color = "red";
+
+            // Giving timeout so that the element will disappear automatically. 
+            setTimeout(function () {
+                element.innerHTML = "Click Here for more.....";
+                element.style.color = ""; 
+            }, 1500);
+        }
+
+    </script>
+    
+</body>
+</html>

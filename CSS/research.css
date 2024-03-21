@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.photo-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+body{
+    background-color: cyan(82, 7, 143, .4);
+}
+
+img {
+    max-width: 45%; 
+    height: auto; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+.section_p1 {
+    font-weight: normal;
+    margin-bottom: 5px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.main-description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* This is the navbar of the page. */
+/* CSS for our navigation bar */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #162733;
+    box-shadow: 0 5px 15px #143;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navigationbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigationbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navigationbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navigationbar li a:hover,
+#navigationbar li a.active {
+    color: aquamarine;
+}
+
+#navigationbar li a.active::after,
+#navigationbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: cadetblue;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ccd89c;
+}
+
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{ 
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #455;
+    margin-bottom: 10px;
+} 
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: gray;
+    padding-right: 4px;
+    cursor: pointer;
+}

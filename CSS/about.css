@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+body{
+   background-image: url('../images/bg\ image.jpg' );
+   background-color: cyan(82, 7, 143, .4);
+   color: black;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+/* THis is the property for the navbar of the header. */
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #162733;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navigationbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigationbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navigationbar li a{
+     text-decoration: none;
+     font-size: 16px;
+     font-weight: 600;
+     color: white;
+     transition: 0.3s ease;
+}
+
+#navigationbar li a:hover,
+#navigationbar li a.active{
+    color: aquamarine; 
+
+}
+
+#navigationbar li a.active::after,#navigationbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: cadetblue;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* This style is for the main page.  */
+.about{
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    background: #162733;
+    
+}
+
+/* This is for the story of about us.  */
+.our-story{
+    display: flex;
+    height: 400px;
+    width: 800px;
+    padding-top: 50px;
+    margin: 50px 0px;
+    position: relative;
+    left: 20%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.428);
+    border-radius: 10px;
+}
+.our-story:hover{
+    background-color: rgba(104, 96, 96, 0.713);
+    transform: scale(1.1);
+}
+
+.story{
+    text-align: justify;
+    height: 100%;
+    width: 45%;
+    padding: 20px;;
+    
+}
+
+.img{
+    height: 100%;
+    width: 45%;
+    background-color: aqua;
+}
+
+.image{
+    display: flex;
+    height: 400px;
+    width: 1200px;
+    padding-top: 20px;
+    margin: 20px;
+    position: relative;
+    left: 10%;
+    margin-bottom: 80px;
+}
+.image img{
+    padding: 20px;
+    border-radius: 80px;
+}
+
+.picture{
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+
+}
+.picture a{
+    color: white;
+    text-decoration: none;
+}
+.image h2, h3{
+    text-align: center;
+    font-size: 20px;
+}
+/* This style is for the footer. */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ccd89c;
+}
+
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{ 
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #455;
+    margin-bottom: 10px;
+} 
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: gray;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+
+

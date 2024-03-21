@@ -1,0 +1,196 @@
+/* Giving margin and padding zero so we have to give everthing no space is between the element.  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Giving some property to the body.  */
+body {
+    background-color: cyan(82, 7, 143, .4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+
+/* This is the container which contain everypart of the body. All images part are under this div. */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Giving hover property to the main div.  */
+.container:hover{
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* This part is for the property of the cart font and cart message.  */
+.cart {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    color: #2b4047fd;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cart-message {
+    position: fixed;
+    bottom: 20px;
+    left: 80px;
+    background-color: #030303;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* This style is for the product part and and the image. Image part.  */
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-img {
+    width: 40%;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* This css is for the small picture part in under the product.  */
+.small-img-container {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.small-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.small-img:hover {
+    opacity: 0.7;
+}
+
+
+/* This is the detail section for the product where there is the name, price and buy and cart button.  */
+.detail {
+    width: 50%;
+    padding: 20px;
+}
+
+.detail ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.buy-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Giving property to the quantity button. It will add and subtract the value. */
+.quantity{
+    padding: 4px;
+}
+.quant{
+    font-size: 1.2em;
+    margin-right: 8px;
+}
+
+.write{
+    font-size: 1em;
+    width: 50px;
+    text-align: center;
+}
+
+.add{
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 4px;
+    padding: 4px 8px;
+}
+
+#price{
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Buy bottom.  */
+.buy-button button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    background-color: #07056a;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.buy-button button:hover {
+    background-color: #2acad9;
+    border: 2px solid aqua;
+    transform: scale(1.1);
+}
+
+/* Cart button.  */
+.cart-button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 30px;
+    background-color: #07056a;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cart-button:hover {
+    background-color: #2acad9;
+    border: 2px solid aqua;
+    transform: scale(1.1);
+}
+
+
+/* This is the section where there is the detail and description of the product.  */
+.second {
+    padding: 20px;
+    text-align: justify;
+}
+
+.second h3 {
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.second ul {
+    padding-left: 20px;
+    color: #555;
+}
+
