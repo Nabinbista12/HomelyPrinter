@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+      .aboutpage {
+        margin-right: 50px;
+      }
+      .aboutpage p:hover{
+        color: black;
+        font-weight: bold;
+        font-size: 1.2em;
+        background: white;
+        opacity: 0.8;
+        transition: 0.5s ease-in;
+        padding-right: 20px;
+        transform: scale(1.1);
+      }
+      .btn a{
+        text-decoration: none;
+      }
+      .vertical-desc {
+        margin-top: 40px;
+        margin-bottom: 50px;
+      }
+      .vertical-desc:hover {
+        margin-top: 10px;
+        transform: scale(1.3);
+        transition: 0.5s ease;
+        color: white;
+        font-weight: bold;
+      }
+      .contactme {
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Nabin's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#aboutme">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi, my name is <span class="purple">Nabin</span>
+          <div>and I am a web developer</div>
+          <div>I am passionate in</div>
+          <span id="element"></span>
+          <div class="button">
+            <button class="btn"><a href="./img/portfolio1.jpg">View resume</a></button>
+            <button class="btn"><a href="https://github.com/Nabinbista12">Visit GitHub</a></button>
+            <button class="btn"><a href="https://www.linkedin.com/in/nabin-bista/">Visit Linkedln</a></button>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="./img/portfolio3.png" alt="" style="height: 400px; width: 400px; " />
+        </div>
+      </section>
+      <hr />
+      <h3 style="text-align: center;" id="aboutme">About Me</h3>
+      <div class="thirdsection">
+        
+        <div class="leftaboutpage">
+            <img src="./img/portfolio4.jpg" alt="" style="height: 400px; width: 400px; padding-left: 150px " />
+        </div>
+        <div class="aboutpage">
+          <p>
+            Hello, I'm Nabin Bista, currently pursuing my BSc. Hons in Computing at Islington College in Kamaladi, Kathmandu, Nepal. Originally from West Rukum, I now reside in Kathmandu. My academic journey has reached the second semester, where I've been honing my skills in various aspects of technology. Proficient in web development (HTML, CSS, JavaScript),  Java, and more, I bring a diverse set of technical skills to the table.  I strive for excellence in every project.  I am committed to continuous learning, staying abreast of the latest industry trends, and eagerly anticipating the opportunity to apply my skills in real-world scenarios. Explore my portfolio for a glimpse into my projects, and feel free to reach out for potential opportunities or collaborations. Thank you for visiting!</p>
+        </div>
+      </div>
+      <section class="secondsection" id="services" style="margin-top: 100px;">
+        <span class="text-grey">What i have done so far</span>
+        <h1>Work Space</h1>
+        <div class="box">
+          <div class="vertical">
+              <img class="image-top" src="./img/python.jpg" alt="">
+              <div class="vertical-title">
+                  Python
+              </div>
+              <div class="vertical-desc">
+                Proficient in Python: Experienced in developing and maintaining Python programming language. Skilled in leveraging Python's versatility to build web applications. Proficiency in utilizing Python frameworks like Django for rapid web development, and expertise in harnessing libraries such as NumPy, pandas, and TensorFlow for data manipulation, analysis, and AI development.
+              </div>
+          </div>
+          <div class="vertical">
+              <img class="image-top" src="./img/html.jpg" alt="">
+              <div class="vertical-title">
+                  HTML
+              </div>
+              <div class="vertical-desc">
+                Proficient in HTML: Experienced in creating well-structured, semantic HTML documents for building responsive and accessible web pages. Skilled in utilizing HTML5 features and elements to optimize website performance and user experience. Knowledgeable about best practices for SEO and cross-browser compatibility. Also my coursework from +2 and in bachelor make me a good html developer.
+              </div>
+          </div>
+          <div class="vertical">
+              <img class="image-top" src="./img/css.jpg" alt="">
+              <div class="vertical-title">
+                  Css
+              </div>
+              <div class="vertical-desc">
+                Proficient in styling web pages using CSS, including layout design, typography, and color schemes. Experienced in leveraging CSS3 features such as flexbox and grid for creating responsive and visually appealing layouts. I have also knowledge of Bootstrap framework.
+              </div>
+          </div>
+          <div class="vertical">
+              <img class="image-top" src="./img/js.jpg" alt="">
+              <div class="vertical-title">
+                  JavaScript
+              </div>
+              <div class="vertical-desc">
+                  Proficient in javaScript basic it array, function, class and other. But also little bit weak in dom so i am trying to best to be good in Dom. Also have good knowledge of React.
+              </div>
+          </div>
+          <div class="vertical">
+              <img class="image-top" src="./img/java.jpg" alt="">
+              <div class="vertical-title">
+                  Java
+              </div>
+              <div class="vertical-desc">
+                  My coursework in java and my passion in java make me a good java developer.
+              </div>
+          </div>
+          <div class="vertical">
+              <img class="image-top" src="./img/canva.jpg" alt="">
+              <div class="vertical-title">
+                  Canva
+              </div>
+              <div class="vertical-desc">
+                  Canva is basically a graphic design tool. I use canva for templete and the designing of web page. Just for refrence. I also use canva for graphic designing, logo designing and other thing.
+              </div>
+          </div>
+      </div>
+      </section>
+    </main>
+
+    <section class="contactme" id="contactme">
+      
+      <div class="contactme-left">
+        <div class="contact1">
+            <h2>Contact Information</h2>
+            <p>You can call and email here anytime.</p>
+        </div>
+        <div class="contactfirst">
+          <div class="phone contact-common">
+            <i class="fa-solid fa-phone"></i>
+            <p>+977 9823503878</p>
+          </div>
+        </div>
+        <div class="contactsecond">
+          <div class="email contact-common">
+            <i class="fa-solid fa-envelope"></i>
+            <p>bistanabin98@gmail.com</p>
+          </div>
+          <div class="email contact-common">
+            <i class="fa-solid fa-envelope"></i>
+            <p>bistanabin04@gmail.com</p>
+          </div>  
+        </div>
+        <div class="contactlocation contact-common">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Kathmandu, Nepal</p>
+        </div>
+      </div>
+      <div class="contactmeright">
+        <form class="contact-right" action="">
+          <div class="name">
+            <div class="firstname">
+              <label>First Name</label>
+              <br>
+              <input  class="input-contact contact-second" type="text" name="Name" id="" placeholder="Enter your first name">
+            </div>
+            <div class="secondname">
+              <label>Second Name</label>
+              <br>
+              <input class="input-contact contact-second" type="text" name="Name" id="" placeholder="Enter your second name">
+            </div>
+          </div>
+          <label class="email">Email</label>
+          <input class="input-contact contact-second" type="text" name="Email" id="" placeholder="Enter email">
+          <br>
+          <label>Subject</label>
+          <input class="input-contact contact-second" type="text" name="Subject" id="" placeholder="Subject for contact us">
+          <br>
+          <div class="message">
+            <label for="">Messsage</label>
+            <br>
+            <textarea class="input-contact" name="message" id="" cols="40" rows="6" placeholder="Write a message"></textarea>
+          </div>
+          <button type="submit" style="height: 30px; width: 80px; border-radius: 8px;">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Nabin's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+          </ul>
+        </div>
+      <div class="footer-right">
+        Copyright &#169; nabinportfolio.com | All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

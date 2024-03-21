@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Internal CSS end  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="./images/rtt.png">
+    <title>Home</title>
+    <!--Stylesheets links for external icons-->
+    <link rel="stylesheet" href="./CSS/home.css">
+    <!-- Internal CSS  -->
+    <style>
+        /*CSS for our website name*/
+        
+
+        /*CSS for our image slider*/
+        .imgslider {
+            width: 90%;
+            height: 500px;
+            margin: 20px auto;
+            box-sizing: border-box;
+            overflow: hidden;
+            box-shadow: 5px 5px 10px grey;
+        }
+
+        .maintain img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+        <div class="name" style="position: absolute; left: 70px;">
+            <p>HomelyPrinters</p>
+        </div>
+        
+
+        <!-- In this section there is search logo and the placeholder for the search page.  -->
+        <div class="nav-search">
+            <a href="./Html/product.html" style="text-decoration: none; padding-top: 10px;">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </a>
+            <input type="text" , placeholder="Search for the printer" class="search-input">
+        </div>
+
+        <!-- In this section there is cart option.  -->
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </div>
+    </div>
+    <!--Defining required structure of our navigation bar-->
+    <nav id="header">
+
+        <div class="name"></div>
+
+
+        <div>
+            <ul id="navigationbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="./Html/product.html">Products</a></li>
+                <li><a href="./Html/blog.html">Blog</a></li>
+                <li><a href="./Html/research.html">Research</a></li>
+                <li><a href="./Html/about.html">AboutUs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Defining section for out image advertisement-->
+    <section class="imagemover">
+        <div class="imgslider" id="slideimg">
+            <img src="./images/sl1.png" class="maintain">
+
+            <!-- JS CODE for image slider  -->
+            <script>
+                let pictures = ["./images/sl2.png", "./images/sl3.png", "./images/sl1.png"];
+                let a = 0;
+                var pic = document.getElementById('slideimg');
+                setInterval(imageslider, 2000); //sets a time interval between the dispayed images//
+
+                //setting a fuction for our image slider to function//
+                function imageslider() {
+                    if (a < pictures.length) {
+                        a = a + 1;
+                    }
+                    else {
+                        a = 1;
+                    }
+                    pic.innerHTML = "<img src=" + pictures[a - 1] + ">";
+                }
+            </script>
+        </div>
+    </section>
+    <!--Defining section for navigating to available products-->
+    <section id="fproducts" class=".section_p1">
+        <h2>Featured Printers</h2>
+        <p>New generation of printers</p>
+        <div class="prod-vessel">
+            <div class="prod">
+                <div class="first">
+                    <h1>All Printers</h1>
+                </div>
+
+            </div>
+            <div class="prod">
+                <img src="" alt="">
+                <div class="first">
+                    <h1>Impact-Printers</h1>
+                </div>
+            </div>
+
+            <div class="prod">
+                <div class="first">
+                    <h1>Non Impact-Printers</h1>
+                </div>
+            </div>
+
+            <div class="prod">
+                <div class="first">
+                    <h1>See More.......</h1>
+                </div>
+            </div>
+    </section>
+
+    <!-- Defining section for repair offers -->
+    <section id="banner" class="section_m1">
+        <h4>Repair Services</h4>
+        <h2>Upto <span>70% off</span> - All parts and accesories</h2>
+        <button class="plain">Learn More</button>
+    </section>
+
+
+    <section id="fproducts" class=".section_p1">
+        <h2>New Printers</h2>
+        <p>New generation of laser printers</p>
+        <div class="prod-vessel">
+            <div class="prod">
+                <img src="./images/l4.png" alt="">
+                <div class="first">
+                    <h5>Brother</h5>
+                </div>
+            </div>
+
+            <div class="prod">
+                <img src="./images/l3.png" alt="">
+                <div class="first">
+                    <h5>EPSON</h5>
+                </div>
+            </div>
+
+            <div class="prod">
+                <img src="./images/l2.png" alt="">
+                <div class="first">
+                    <h5>HP</h5>
+                </div>
+            </div>
+
+            <div class="prod">
+                <img src="./images/l1.png" alt="">
+                <div class="first">
+                    <h5>CANNON</h5>
+                </div>
+    </section>
+
+    <!-- Defining section for our 5 flash cards -->
+    <section id="flashbanners" class="section_p1">
+        <div class="cardbox">
+            <h4>New Offers</h4>
+            <h2>Buy new printer with 2 years free servicing</h2>
+            <span>For first 150 printers sold</span>
+            <button class="plain2">Learn More</button>
+        </div>
+        <div class="cardbox cardbox2">
+            <h4>New Offers</h4>
+            <h2>Buy new printer with 2 years free servicing</h2>
+            <span>For fisrt 150 printers sold</span>
+            <button class="plain2">Learn More</button>
+        </div>
+    </section>
+
+    <!-- bottom three flashcards -->
+    <section id="cardbox3">
+        <div class="cardbox">
+            <h2>Winter sale</h2>
+            <h3>-56% OFF</h3>
+        </div>
+
+        <div class="cardbox cardbox4">
+            <h2>Dashain sale</h2>
+            <h3>-46% OFF</h3>
+        </div>
+
+        <div class="cardbox cardbox5">
+            <h2>Spring sale</h2>
+            <h3>-26% OFF</h3>
+        </div>
+    </section>
+
+    <!-- section for newsletter -->
+    <section id="news" class="section_p1 section_m1">
+        <div class="newstext">
+            <h4>Sign up for newsletter</h4>
+            <p>Get email about<span> new offers</span></p>
+        </div>
+
+
+        <form class="form" name="get" onsubmit="return validate()">
+            <input type="text" placeholder="Your email address" name="email" id="em">
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+
+    <!-- Section for our ending footer -->
+    <footer class="section_p1">
+        <div class="col1">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Islington College, Kamalpokhari</p>
+            <p><strong>Phone:</strong> 01-47658990, 01-44888997</p>
+            <p><strong>Email:</strong> print@gmail.com</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Division for website Information -->
+        <div class="col">
+            <h4>About Us</h4>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Terms</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Delivery</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="Html/form.html">Sign In</a>
+            <a href="#">Notifications</a>
+            <a href="#">My Cart</a>
+            <a href="#">Track Order</a>
+        </div>
+
+        <!-- Division for app Information -->
+        <div class="install">
+            <h4>Install App</h4>
+            <p>From App Store and Google Play</p>
+            <div class="row">
+                <img src="./images/app.png" alt="">
+                <img src="./images/5a902dbf7f96951c82922875.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <p style="background-color:#ccd89c; text-align:center; padding-bottom:45px">&#169; Copyright HTML,CSS 2024</p>
+
+    <!-- Fuction for our newletter validation -->
+
+</body>
+
+</html>
+<!-- Home page end  -->

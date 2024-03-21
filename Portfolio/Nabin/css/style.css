@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:ital,wght@0,400;1,200&family=Potta+One&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;  
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../img/portfolio2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(0, 0, 60);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+nav ul li a:hover{
+    color: rgb(107, 107, 234);
+    font-size: 1.05rem;
+}
+.left{
+    font-size: 2rem;
+}
+
+
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+}
+.firstsection > div{
+    width: 30%;
+}
+.leftsection{
+    font-size: 2rem;
+}
+
+.button{
+    padding: 50px 0;
+}
+.leftsection .btn{
+    padding: 12px;
+    color: white;
+    background: #000121;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rightsection img{
+    width: 80%;
+}
+.purple{
+    color: purple;
+}
+
+#element{
+    color: rgb(107, 107, 234);
+}
+
+.thirdsection{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+}
+.aboutpage, .leftaboutpage{
+    height: 350px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+main hr{
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.secondsection{
+    font-size: 1.9rem;
+}
+.text-grey{
+    color: grey;
+    font-size: 0.9rem;
+}
+.secondsection .box{
+    background: white;
+    width: 78vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+.secondsection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0px 240px 0px 0px;
+}
+
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    color: gray;
+    width: 150px;
+    font-size: 9px;
+}
+
+/* project css  */
+.project{
+    height: 430px;
+    width: 100%;
+}
+.projectdiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+.projectsdiv{
+    height: 380px;
+    width: 320px;
+    background-color: aquamarine;
+    box-shadow: 10px 10px 10px rgb(158, 197, 197);
+}
+.more a{
+    position: absolute;
+    right: 23px;
+}
+.projectimg{
+    height: 70%;
+    width: 100%;
+    background-color: red;
+}
+.projectdiv img{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Contact  */
+.contactme{
+    display: flex;
+    height: 400px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    background-color: rgba(154, 140, 140, 0.642);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+.contactme:hover{
+    background-color: rgba(111, 107, 107, 0.104);
+}
+.contactme-left{
+    margin: 10px;
+    height: 380px;
+    width: 40%;
+    background-color: rgb(41, 55, 55);
+    border-radius: 20px;
+    
+}
+.contact-common{
+    display: flex;
+}
+.contact1{
+    padding: 10px;
+}
+.contactfirst, .contactsecond, .contactlocation{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.contact-common i{
+    padding-right: 15px;
+    padding-left: 10px;
+}
+.name{
+    display: flex;
+    padding-top: 10px;
+}
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.email{
+    padding-top: 10px;
+}
+.firstname{
+    margin-right: 20px;
+}
+.input-contact{
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgb(48, 49, 48);
+    border: none;
+}
+.contact-second{
+    height: 25px;
+}
+.message{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+.contact-right input, textarea{
+    padding-left: 4px;
+}
+
+footer{
+    background-color: #0e0e1a;
+}
+.footer{
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+.footer ul{
+    list-style: none;
+
+}
+.footer >div{
+    width: 123px;
+}
+
+.footer-right{
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+
